@@ -1,0 +1,68 @@
+describe('test practice', ()=> {
+    it('demoblaze' , ()=>{
+         cy.visit('https://www.demoblaze.com/index.html')
+        cy.url().should('include', 'https://www.demoblaze.com/index.html')
+        // //cy.get('#signin2').click()
+        // //cy.get('#signin2').should('not.be.disabled')
+        // //cy.wait(4000)
+        // //cy.get('#sign-username').type('umairch6754/123')
+        // //cy.wait(4000)
+         cy.get('#login2').click()
+         cy.wait(3000)
+         cy.get('#loginusername').type('umairch6754/123')
+         cy.get('#loginpassword').type('12345678')
+         cy.get('[class="btn btn-primary"]').eq(2).click()
+         cy.get('[class="list-group-item"]').eq(1).click()
+         cy.scrollTo('bottom')
+         cy.get('[class="list-group-item"]').eq(2).click()
+         cy.scrollTo('center')
+         cy.get('[class="list-group-item"]').eq(3).click()
+        cy.scrollTo('top')
+         cy.get('[class="hrefch"]').eq(0).click()
+         cy.get('[class="btn btn-success btn-lg"]').click()
+         cy.get('[class="nav-link"]').eq(3).click()
+         cy.get('#tbodyid > :nth-child(1) > :nth-child(4) > a').click()
+         cy.wait(4000)
+         cy.get('[class="btn btn-success"]').click()
+         cy.wait(3000)
+         cy.get('[class="form-control"]').eq(5).type('Umair')
+         cy.wait(3000)
+         cy.get('[class="form-control"]').eq(6).type('Pakistan')
+         cy.wait(3000)
+         cy.get('[class="form-control"]').eq(7).type('lahore')
+         //cy.wait(3000)
+         cy.get('[class="form-control"]').eq(8).type(345678)
+         //cy.wait(3000)
+         cy.get('[class="form-control"]').eq(9).type(3)
+        //cy.wait(3000)
+         cy.get('[class="form-control"]').eq(10).type(2025)
+         //cy.wait(3000)
+         cy.get('[class="btn btn-primary"]').eq(2).click()
+         cy.get('.confirm').click()
+         cy.get('#orderModal > .modal-dialog > .modal-content > .modal-header > .close > span').click()
+    })
+})
+    describe('test practice', ()=> {
+    it('demoblaze' , ()=>{
+         cy.visit('https://www.demoblaze.com/index.html')
+       cy.get('[class="nav-link"]').eq(1).click()
+         cy.wait(3000)
+         cy.get('[class="form-control"]').eq(0).type('umairqa@gmail.com')
+         cy.wait(3000)
+         cy.get('[class="form-control"]').eq(1).type('03088405616')
+         cy.wait(3000)
+         cy.get('[class="form-control"]').eq(2).type('get out')
+         cy.get('[class="btn btn-primary"]').eq(0).click()
+         cy.scrollTo('bottom')
+         cy.get('#next2').click()
+
+
+
+
+         //cy.get('[class="hrefch"]').eq(1).click()
+
+
+        
+    })
+
+})
